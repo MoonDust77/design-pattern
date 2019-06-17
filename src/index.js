@@ -1,5 +1,11 @@
-const a = 2
-const fn = () => {
-  console.log('app' + a)
+class Person {
+  constructor(name) {
+    this.name = name
+  }
+  getName() {
+    return this.name
+  }
 }
-fn()
+
+let p = new Person('hhh')
+alert(p.getName())
